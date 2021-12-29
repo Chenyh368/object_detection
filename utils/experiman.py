@@ -9,7 +9,6 @@ import base64
 import torch
 import numpy as np
 from torch.utils.tensorboard import SummaryWriter
-from torch.utils.tensorboard.summary import hparams
 
 '''
 Experiment Manager
@@ -265,6 +264,7 @@ class ExperiMan(object):
         else:
             pass
 
+    # For multi GPU
     def set_rank(self, rank):
         self._rank = rank
 
